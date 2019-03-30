@@ -104,7 +104,7 @@ func run() error {
 	// Open channel to listen on the addr
 	list, err := net.Listen("tcp", Addr)
 	if err != nil {
-		return fmt.Errorf("Could not listen on port: %s, Error %v", ":8080", err)
+		return fmt.Errorf("Could not listen on port: %s, Error %v", Addrs, err)
 	}
 
 	// Serve accepts incoming connections on the listener

@@ -21,6 +21,7 @@ import (
 
 // Cert file details
 const (
+	Addr       = ":50052"
 	AkbarCA    = "cert/akbar.com.crt"
 	ClientCert = "cert/client.crt"
 	ClientKey  = "cert/client.key"
@@ -55,9 +56,9 @@ func run() error {
 	})
 
 	// Creates a client connection to the given target
-	gConn, err := grpc.Dial(":50052", grpc.WithTransportCredentials(creds))
+	gConn, err := grpc.Dial(Addr, grpc.WithTransportCredentials(creds))
 	if err != nil {
-		return fmt.Errorf("Could not dail : %s, Error : %v", "", err)
+		return fmt.Errorf("Could not dail : %s, Error : %v", Addr, err)
 	}
 
 	// Create new client
@@ -82,7 +83,6 @@ func run() error {
 			log.Printf("Sent : %d", n)
 			time.Sleep(time.Millisecond * 100)
 		}
-		time.Sleep(time.Millisecond * 200) // Don't close immediate
 		if err := s.CloseSend(); err != nil {
 			log.Printf("error while closing the send : %v", err)
 		}
