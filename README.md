@@ -47,7 +47,7 @@ $ ./bin/certstrap-master-linux-amd64 sign out/server --CA akbar.com
 ```
 The above files will be generated inside the `/out folder`
 
-`Copy akbar.com.crt, server.crt and server.key to server/cert folder`
-`Copy akbar.com.crt, client.crt and client.key to client/cert folder`
+- `Copy akbar.com.crt, server.crt and server.key to secure-grpc/server/cert folder`
+- `Copy akbar.com.crt, client.crt and client.key to secure-grpc/client/cert folder`
 
 # Happy Coding!
