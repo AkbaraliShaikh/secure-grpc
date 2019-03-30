@@ -18,6 +18,10 @@ $ cd client
 $ go run client.go
 ```
 
+## Output
+
+<a target="_blank" href="https://github.com/AkbaraliShaikh/AspNetCore2Docker/blob/master/img/Go_Project_Structure.PNG" class="rich-diff-level-one"><img src="https://github.com/AkbaraliShaikh/AspNetCore2Docker/blob/master/img/sgrpc.png" alt="text" width=85%  height=500px></a>
+
 # Guide to generate proto and certs
 #### Step 1: Proto Generation:
 
