@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Go-lang: Secure Bi-Directional GRPC streaming server & client example using TLS to find max number from the stream.
+Go-lang: Secure Bi-Directional GRPC streaming server & client example using SSL/TLS to find max number from the stream.
 
 # How to run
 
