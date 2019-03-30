@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package proto;
+
+service Max{
+    rpc Num(stream Request) returns (stream Response){}
+}
+
+message Request{
+    int32 num = 1;
+}
+
+message Response{
+    int32 result = 1;
+}
+
+
